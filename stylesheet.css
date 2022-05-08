@@ -90,12 +90,13 @@ h2 {
     padding-left: 20px;
 }
 .skylightPic {
-    display: inline-block;
+    float: left;
 }
 .solarblock {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+
 }
 .solarText {
     font-size: 20px;
@@ -164,7 +165,7 @@ h2 {
   
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover,  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(90, 88, 88, 0.8);
 }
   
   /* Number text (1/3 etc) */
@@ -206,4 +207,14 @@ h2 {
 .mainImg {
     width: 480px;
     height: 400px;
+}
+#pictureTextLeft {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+#pictureTextRight {
+    position: absolute;
+    left: 80%;
+    top: 10%;
 }
