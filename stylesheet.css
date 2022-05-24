@@ -120,6 +120,11 @@ h2 {
     grid-template-columns: auto auto auto;
     padding: 10px;
     text-align: center;
+    justify-content: center;
+}
+#addressContainer, #contactContainer {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .galleryContainer {
     position: relative;
@@ -155,12 +160,12 @@ h2 {
 .next {
     top: -240px;
     right: -250px;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0px 5px 5px 0px;
 }
 .prev {
     top: -240px;
     right: 250px;
-    border-radius: 3px 0 0 3px;
+    border-radius: 5px 0 0 5px;
 }
   
   /* On hover, add a black background color with a little bit see-through */
