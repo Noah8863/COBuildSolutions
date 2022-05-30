@@ -143,7 +143,6 @@ p {
 .prev, .next {
     cursor: pointer;
     position: relative;
-    top: 30%;
     width: auto;
     padding: 10px;
     margin-top: -10px;
@@ -157,12 +156,12 @@ p {
   
   /* Position the "next button" to the right */
 .next {
-    top: -240px;
+    top: -30px;
     right: -250px;
     border-radius: 0px 5px 5px 0px;
 }
 .prev {
-    top: -240px;
+    top: -30px;
     right: 250px;
     border-radius: 5px 0 0 5px;
 }
@@ -215,8 +214,10 @@ p {
     opacity: 1;
 }
 .mainImg {
-    width: 480px;
-    height: 400px;
+    margin-top: 25px;
+    width: auto;
+    height: 700px;
+    
 }
 #pictureHeaderLeft {
     position: absolute;
