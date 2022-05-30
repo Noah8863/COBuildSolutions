@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+a {
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    color: #000000;
+}
+p {
+    color: #000000;
+}
+.navbar {
+    
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #2196F3;
+    color: #fff;
+}
+#leftnav {
+    
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+#rightnav {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+#mainblockText {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#whoWeAreText {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.roofblock {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.rooftext {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.skylightblock {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.skylightText {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.skylightPic {
+    float: left;
+}
+.solarblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.solarText {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(71, 70, 70);
+    color: white;
+}
+#creator {
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color:white;
+}
+.contactInfo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+#addressContainer, #contactContainer, #infoContainer{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.galleryContainer {
+    position: relative;
+    text-align: center;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    padding: 10px;
+    margin-top: -10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    top: -30px;
+    right: -250px;
+    border-radius: 0px 5px 5px 0px;
+}
+.prev {
+    top: -30px;
+    right: 250px;
+    border-radius: 5px 0 0 5px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,  .next:hover {
+    background-color: rgba(90, 88, 88, 0.8);
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+.row {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+.active, .demo:hover {
+    opacity: 1;
+}
+.mainImg {
+    margin-top: 25px;
+    width: auto;
+    height: 700px;
+    
+}
+#pictureHeaderLeft {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+#pictureHeaderRight {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+}
