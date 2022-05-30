@@ -6,6 +6,13 @@ USE resources_db;
 CREATE TABLE lumber (
     id INT NOT NULL,
     lumberDescription VARCHAR(255) NOT NULL,
+    dim VARCHAR(255) NOT NULL,
+    OSB VARCHAR(255) NOT NULL
+    plywood VARCHAR(255) NOT
+)
+CREATE TABLE plywood (
+    id INT NOT NULL,
+
 )
 
 CREATE TABLE shingles (
