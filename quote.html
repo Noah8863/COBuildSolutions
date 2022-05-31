@@ -46,13 +46,15 @@
             <p id='rightnav'>(720)-607-6890</p>
         </ul>
     </nav>
-    <form class="input-field">
-        <input type="input" placeholder="First Name"><br>
-        <input type="input" placeholder="Last Name"><br>
-        <input type="input" placeholder="Email Address"><br>
-        <textarea rows = "5" cols = "60" name = "description">
-            Enter details here...
-         </textarea><br>
+    <form class="input-field" action="mailto:stacknoah99@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
     </form>
 </body>
 
