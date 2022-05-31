@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <!-- Need to grab actual photo and not wix verison -->
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <!-- Need to grab actual photos and not wix verison -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
@@ -20,12 +20,27 @@
     </div>
     <nav class='navbar'>
         <ul class="navbar-links">
-            <li id="leftnav"><a href='#logo'>Home</a></li>
-            <li id="leftnav"><a href='/'>Products</a> </li>
-            <li id="leftnav"><a href='#contactContainer'>Contact</a></li>
-            <li id="leftnav"><a href='#gallery'>Gallery</a></li>
-            <li id="leftnav"><a href='/'>Quote</a></li>
-            <li id="leftnav"><a href='./login.html'>Login</a></li>
+            <div class='dropdown'>
+                <a href="/"><button class="dropbtn">Home</button></a>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                    <a href="#">Lumber</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Gallery</button>
+                <div class="dropdown-content">
+                    <a href="#">Roofing</a>
+                    <a href="#">Solar Panels</a>
+                    <a href="#">Skylights</a>
+                </div>
+            </div>
+            <a id="navbar-links" href="quote.html">Get A Quote</a>
+            <a id="navbar-links" href="#addressContainer">Contact</a>
         </ul>
         <ul class="navbar-contact">
             <p id="rightnav">cobuildingsolutions@gmail.com</p>
@@ -38,7 +53,6 @@
             <div class="numbertext">1 / 6</div>
             <img class='mainImg'
                 src="https://api.hub.jhu.edu/factory/sites/default/files/styles/landscape/public/construction_121118.jpg?itok=1p3Neapi">
-                
             <h1>Lumber</h1>
         </div>
 
@@ -47,7 +61,6 @@
             <img class='mainImg'
                 src="https://www.hometips.com/wp-content/uploads/2014/10/shutterstock_194431040.jpg?ezimgfmt=ng:webp/ngcb101">
             <h1>Title of picture here</h1>
-            
         </div>
 
         <div class="mySlides">
@@ -55,7 +68,7 @@
             <img class='mainImg'
                 src="https://nwrcommercial.com/wp-content/uploads/2020/07/commercial-roof-install-02.jpg">
             <h1>Title of picture here</h1>
-            
+
         </div>
 
         <div class="mySlides">
@@ -63,15 +76,14 @@
             <img class='mainImg'
                 src="https://bellelectricalsystems.com/wp-content/uploads/2020/06/BellSolarElectrical-Commercial-Solar-Installation.jpg">
             <h1>Title of picture here</h1>
-            
+
         </div>
 
         <div class="mySlides">
             <div class="numbertext">5 / 6</div>
-            <img class='mainImg'
-                src="http://clcpallets.com/wp-content/uploads/2015/05/CLC-PPI-Web-Photos-25-WEB.jpg">
+            <img class='mainImg' src="http://clcpallets.com/wp-content/uploads/2015/05/CLC-PPI-Web-Photos-25-WEB.jpg">
             <h1>Title of picture here</h1>
-            
+
         </div>
 
         <div class="mySlides">
@@ -137,9 +149,9 @@
                 <h3>Contact</h3> </br>
                 <p>cobuildingsolutions@gmail.com</p>
                 <p>(720) 607-6890</p>
-                <a class="facebook1" href="https://www.facebook.com/CObuildingSolutions/" target="_blank"
+                <a class="facebook1" style="color: white;" href="https://www.facebook.com/CObuildingSolutions/" target="_blank"
                     title="Facebook">Facebook</a> </br>
-                <a class="instagram" href="https://www.instagram.com/cobuildingsolutions/" target="_blank"
+                <a class="instagram" style="color: white;" href="https://www.instagram.com/cobuildingsolutions/" target="_blank"
                     title="Instagram">Instagram</a>
             </div>
             <div id="infoContainer">
