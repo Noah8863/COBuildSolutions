@@ -128,26 +128,32 @@ img {
 .roofblock {
     display: grid;
     grid-template-columns: 60% auto;
+    margin: 20px;
 }
 .rooftext {
+    margin-top: 10px;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 .skylightblock {
     display: grid;
     grid-template-columns: 40% auto;
+    margin: 20px;
 }
 .skylightText {
+    margin-top: 10px;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 .solarblock {
     display: grid;
     grid-template-columns: 60% auto;
+    margin: 20px;
 }
 .solarText {
+    margin-top: 10px;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 .footer {
     width: 100%;
