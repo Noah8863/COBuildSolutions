@@ -16,6 +16,9 @@ text-decoration: none;
 img {
     max-width: 100%;
 }
+h2 {
+    font-weight: bold;
+}
 #logo {
     position: absolute;
     margin-top:25px;
@@ -104,26 +107,6 @@ img {
     position: relative;
     display: inline-block;
     margin: 10px;
-}
-#mainblockText {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: x-large;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#whoWeAreText {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .roofblock {
     display: grid;
