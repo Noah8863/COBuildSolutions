@@ -364,13 +364,11 @@ th {
   top: 10%;
 }
 
+#novaPic {
+  margin-top: 10px;
+}
+
 .input-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
@@ -380,14 +378,108 @@ th {
   background-color: lightgray;
 }
 
-input[type=text] {
-  padding: 10px;
-  border: 0;
-  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+.nameform {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
 }
 
-#novaPic {
+.emailform {
+  position: relative;
+  padding: 15px 0 0;
   margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.subjectform {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.messagebox {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #65c2ba, #1ca7a7);
+     border-image: -webkit-gradient(linear, left top, right top, from(#65c2ba), to(#1ca7a7));
+     border-image: linear-gradient(to right, #65c2ba, #1ca7a7);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #65c2ba;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=styles.css.map */

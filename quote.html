@@ -49,19 +49,29 @@
         </ul>
     </nav>
     <div class="input-field">
-        <form>
-            <h1>Get in touch</h1>
-            <h2>Full Name</h2>
-            <input type="text" placeholder="Name"><br>
-            <h2>Email</h2>
-            <input type="text" placeholder="Email"><br>
-            <h2>Subject</h2>
-            <input  type="text"  placeholder="Subject"><br>
-            <h2>Message</h2>
-            <textarea style="resize:none;" cols="80" rows="10" type="text" placeholder="Message"></textarea><br>
-            <button type="button">Submit</button>
-        </form>
+
+        <form class="nameform field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required /><br>
+            <label for="name" class="form__label">Full Name</label><br>
+        </form><br>
+
+        <form class="emailform field">
+            <input type="input" class="form__field" placeholder="Email" name="email" id='email' required /><br>
+            <label for="email" class="form__label">Email</label><br>
+        </form><br>
+
+        <form class="subjectform field">
+            <input type="input" class="form__field" placeholder="Subject" name="subject" id='subject' required /><br>
+            <label for="subject" class="form__label">Subject</label><br>
+        </form></br>
+
+        <form class="messagebox field">
+            <input type="input" class="form__field" placeholder="Message" name="message" id='message' required /><br>
+            <label for="message" class="form__label">Message</label><br>
+        </form></br>
+    
     </div>
+    <button type="button">Submit</button>
     <div class="footer">
         <div class="contactInfo">
             <div id="addressContainer">
@@ -95,4 +105,5 @@
     </div>
     <script src="https://kit.fontawesome.com/78de80bbe9.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
