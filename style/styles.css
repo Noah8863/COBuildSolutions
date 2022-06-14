@@ -73,7 +73,7 @@ th {
           justify-content: space-between;
   margin-top: 15px;
   padding: 5px;
-  background-color: #2196F3;
+  background-color: #1777cb;
   color: #fff;
   font-size: 20px;
 }
@@ -368,14 +368,28 @@ th {
   margin-top: 10px;
 }
 
+.lumberText {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: white;
+}
+
+#bulktext {
+  position: relative;
+  top: 60px;
+  left: 16%;
+}
+
 .input-field {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
   width: auto;
   height: 100%;
-  background-color: lightgray;
+  background-color: #1777cb;
 }
 
 .nameform {
@@ -394,15 +408,22 @@ th {
   width: 50%;
 }
 
-.subjectform {
+.checkboxform {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   margin-left: 20%;
   width: 50%;
+  font-size: 20px;
+  color: #ffffff;
 }
 
-.messagebox {
+.checkboxOptions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subjectform {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
@@ -422,6 +443,8 @@ th {
   background-color: rgba(0, 0, 0, 0);
   margin-left: 40%;
   margin-bottom: 20px;
+  color: white;
+  background-color: black;
 }
 
 .slide div {
@@ -432,8 +455,8 @@ th {
 }
 
 .slide:hover div {
-  -webkit-transform: translateX(-6px);
-          transform: translateX(-6px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .slide:hover i {
@@ -446,10 +469,10 @@ th {
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid #ffffff;
   outline: 0;
   font-size: 1.3rem;
-  color: #7c7b7b;
+  color: #000000;
   padding: 7px 0;
   background: transparent;
   -webkit-transition: border-color 0.2s;
@@ -485,7 +508,7 @@ th {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
-  color: #9b9b9b;
+  color: #ffffff;
 }
 
 .form__field:focus {
@@ -505,7 +528,7 @@ th {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
-  color: #9b9b9b;
+  color: #ffffff;
   font-weight: 700;
 }
 

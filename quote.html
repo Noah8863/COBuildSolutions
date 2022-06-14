@@ -43,12 +43,12 @@
             <a id="navbar-links" href="#addressContainer">Contact</a>
         </ul>
         <ul class="navbar-contact">
-            <a id="rightnav" href="mailto:cobuildingsolutions@gmail.com">cobuildingsolutions@gmail.com</a>
+            <!-- <a id="rightnav" href="mailto:cobuildingsolutions@gmail.com">cobuildingsolutions@gmail.com</a> -->
             <a href="tel:720-607-6890" id='rightnav'>(720)-607-6890</a>
         </ul>
     </nav>
     <div class="input-field">
-
+        
         <form class="nameform field" method="POST">
             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required /><br>
             <label for="name" class="form__label">Full Name</label><br>
@@ -59,17 +59,36 @@
             <label for="email" class="form__label">Email</label><br>
         </form><br>
 
+        <form class="emailform field" method="POST">
+            <input type="input" class="form__field" placeholder="Phone Number" name="email" id='email' required /><br>
+            <label for="email" class="form__label">Phone Number</label><br>
+        </form><br>
+
+
+        <form class="checkboxform field" method="POST">
+            <h4>Products of Interest*</h4></br>
+            <input type="checkbox" class="checkboxOptions"> Lumber<br>
+            <input type="checkbox" class="checkboxOptions"> Plywood/Veneer<br>
+            <input type="checkbox" class="checkboxOptions"> OSB<br>
+            <input type="checkbox" class="checkboxOptions"> LSL<br>
+        </form>
         <form class="subjectform field" method="POST">
             <input type="input" class="form__field" placeholder="Subject" name="subject" id='subject' required /><br>
             <label for="subject" class="form__label">Subject</label><br>
         </form></br>
 
-        <form class="messagebox field" method="POST">
-            <input type="input" class="form__field" placeholder="Message" name="message" id='message' required /><br>
-            <label for="message" class="form__label">Message</label><br>
-        </form></br>
+        <div class="subjectform">
+            <h4 style="color:white">Your Message/Comments *</h4><br>
+            <textarea cols="90" rows="10"></textarea>
+        </div><br>
+        
+
         <button type="button" class="slide" onClick="sendEmail();">
             <div>Submit</div>
+        </button>
+        <p style="margin-left: 35%;">Commerical Builder?</p>
+        <button style="margin-left: 40%;">
+            Click Here
         </button>
     </div>
 
