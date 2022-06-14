@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/styles.css">
     <!-- Need to grab actual photos and not wix verison -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    <!-- <div id='logo1'>
+        <img src="https://static.wixstatic.com/media/aaa445_453a27faee5a444e9f7420f3b75e6954~mv2.jpg/v1/fill/w_264,h_160,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/aaa445_453a27faee5a444e9f7420f3b75e6954~mv2.jpg"
+            width="200" height="120">
+    </div> -->
     <nav class='navbar'>
         <ul class="navbar-links">
             <div class="dropdown">
@@ -167,14 +171,23 @@
             </div>
             <div id="contactContainer">
                 <h3>More About Us</h3></br>
-                <p></p>
-                <a class="facebook1" style="color: white;" href="https://www.facebook.com/CObuildingSolutions/"
-                    target="_blank" title="Facebook">Facebook</a> </br>
-                <a class="instagram" style="color: white;" href="https://www.instagram.com/cobuildingsolutions/"
-                    target="_blank" title="Instagram">Instagram</a> </br>
-                <a href="https://novanational.com/" target="_blank">
-                    <img id="novaPic" src="https://novanational.com/wp-content/uploads/2018/08/logo_mini.png">
-                </a>
+                <ul class="wrapper">
+                    <a href="https://www.facebook.com/CObuildingSolutions/" target="_blank" style="color: white;"><li class="icon homefacebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </li></a>
+
+                    <a href="https://www.instagram.com/cobuildingsolutions/" target="_blank" style="color: white;"> <li class="icon homeinstagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li> </a>
+
+                    <a href="https://novanational.com/" target="_blank" style="color: white;"> <li class="icon homenova">
+                        <span class="tooltip">Nova</span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                    </li> </a>
+                    
+                </ul>
             </div>
         </div>
         <div id="creator">
@@ -183,6 +196,7 @@
         </div>
     </div>
     <script src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/78de80bbe9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

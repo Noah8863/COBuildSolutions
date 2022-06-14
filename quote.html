@@ -40,7 +40,6 @@
                     <a href="#">Skylights</a>
                 </div>
             </div>
-            <a id="navbar-links" href="quote.html">Send A Message</a>
             <a id="navbar-links" href="#addressContainer">Contact</a>
         </ul>
         <ul class="navbar-contact">
@@ -50,28 +49,30 @@
     </nav>
     <div class="input-field">
 
-        <form class="nameform field">
+        <form class="nameform field" method="POST">
             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required /><br>
             <label for="name" class="form__label">Full Name</label><br>
         </form><br>
 
-        <form class="emailform field">
+        <form class="emailform field" method="POST">
             <input type="input" class="form__field" placeholder="Email" name="email" id='email' required /><br>
             <label for="email" class="form__label">Email</label><br>
         </form><br>
 
-        <form class="subjectform field">
+        <form class="subjectform field" method="POST">
             <input type="input" class="form__field" placeholder="Subject" name="subject" id='subject' required /><br>
             <label for="subject" class="form__label">Subject</label><br>
         </form></br>
 
-        <form class="messagebox field">
+        <form class="messagebox field" method="POST">
             <input type="input" class="form__field" placeholder="Message" name="message" id='message' required /><br>
             <label for="message" class="form__label">Message</label><br>
         </form></br>
-    
+        <button type="button" class="slide" onClick="sendEmail();">
+            <div>Submit</div>
+        </button>
     </div>
-    <button type="button">Submit</button>
+
     <div class="footer">
         <div class="contactInfo">
             <div id="addressContainer">
@@ -88,14 +89,23 @@
             </div>
             <div id="contactContainer">
                 <h3>More About Us</h3></br>
-                <p></p>
-                <a class="facebook1" style="color: white;" href="https://www.facebook.com/CObuildingSolutions/"
-                    target="_blank" title="Facebook">Facebook</a> </br>
-                <a class="instagram" style="color: white;" href="https://www.instagram.com/cobuildingsolutions/"
-                    target="_blank" title="Instagram">Instagram</a> </br>
-                <a href="https://novanational.com/" target="_blank">
-                    <img id="novaPic" src="https://novanational.com/wp-content/uploads/2018/08/logo_mini.png">
-                </a>
+                <ul class="wrapper">
+                    <a href="https://www.facebook.com/CObuildingSolutions/" target="_blank" style="color: white;"><li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </li></a>
+
+                    <a href="https://www.instagram.com/cobuildingsolutions/" target="_blank" style="color: white;"> <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li> </a>
+
+                    <a href="https://novanational.com/" target="_blank" style="color: white;"> <li class="icon nova">
+                        <span class="tooltip">Nova</span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                    </li> </a>
+                    
+                </ul>
             </div>
         </div>
         <div id="creator">
@@ -103,6 +113,8 @@
                 Hoffman</a>
         </div>
     </div>
+    <script src="./scripts/form.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/78de80bbe9.js" crossorigin="anonymous"></script>
 </body>
 
